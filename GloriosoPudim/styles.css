@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 50px;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+}
+
+.img-logo {
+    height: 50px;
+}
+
+.itens ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.itens a {
+    text-decoration: none;
+    color:rgb(224, 119, 14);
+    font-size: 1.3rem;
+}
+
+.itens li {
+    list-style: none;
+}
+
+
+
+
+#home {
+    background-color: #d76d15;
+    color: white;
+    height: 150vh;
+}
+
+#home img {
+    height: 1000px;
+    float: left;
+}
+
+
+
+#cardapio {
+    display: grid;
+}
+
+.pudim-tradicional {
+    background-color: #d76d15;
+    color: white;
+    padding: 10px;
+}
+
+.pudim-tradicional h3 {
+    text-align: center;
+}
+
+.pudim-tradicional img {
+    height: 200px;
+}
+
+/*RGB 224, 119, 14, 1*/
