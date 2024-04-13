@@ -15,6 +15,15 @@
     text-decoration: none;
 }
 
+.btn {
+    background-color: var(--orange-primary);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 2px var(--box-shadow);
+    cursor: pointer;
+}
+
 /*Parte da barra de navegação*/
 nav {
     display: flex;
@@ -40,6 +49,31 @@ nav {
 
 .nav-img {
     height: 4rem;
+}
+
+/*Comaçando menu responsivo*/
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+#close_btn {
+    display: none;
+}
+
+#mobile_nav_list {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0px;
+}
+
+#mobile_nav_list .nav-li {
+    list-style: none;
+    text-align: center;
 }
 
 /*Parte inicial - Home*/
@@ -69,6 +103,15 @@ nav {
 
 #home span {
     color: var(--orange-primary);
+}
+
+.home-icons {
+    background-color: white;
+    color: var(--orange-primary);
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 10px 2px var(--box-shadow);
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .home-botoes {
@@ -124,9 +167,22 @@ nav {
     text-align: justify;
 }
 
+.about-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 .about-diferencial i {
     color: var(--orange-primary);
     font-size: 1rem;
+}
+
+.about-pagamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .about-antecedencia h3, .about-diferencial h3, .about-antec-sub {
@@ -154,7 +210,9 @@ nav {
 
 /*Parte do cardápio com os cards*/
 #menu {
-    background-color: var(--background-color);
+    background: rgb(223,118,14);
+    background: radial-gradient(circle, rgba(223,118,14,1) 3%, rgba(252,243,215,1) 45%);
+    
 }
 
 #menu h2 {
@@ -168,7 +226,8 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     padding: 10px;
-    gap: 5rem;
+    gap: 8rem;
+    padding-bottom: 3rem;
 }
 
 .menu-cards {
@@ -216,32 +275,72 @@ nav {
 #pedido h2 {
     font-size: 3rem;
     color: var(--orange-primary);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 #pedido a {
     color: white;
 }
 
-
-
-
-
-.fa-brands {
-    background-color: white;
-    color: var(--orange-primary);
-    font-size: 1.2rem;
-    box-shadow: 0px 0px 10px 2px var(--box-shadow);
-    padding: 15px;
-    border-radius: 8px;
+/*Estilizando o footer*/
+footer {
+    position: relative;
+    text-align: center;
+    font-size: 0.7rem;
+}
+.footer-text {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, 500%);
+    z-index: 1;
+    color: white;
 }
 
-.btn {
-    background-color: var(--orange-primary);
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px 2px var(--box-shadow);
-    cursor: pointer;
+.footer-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/*Responsivo*/
+@media screen and (max-width: 1170px) {
+    /*Menu Responsivo*/
+    .nav-ul, .nav-pedido {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_nav_list {
+        display: none;
+        flex-direction: column;
+        gap: 12px; margin: 12px 0px;
+    }
+
+    #mobile_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+    }
+
+    #close_btn {
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+
+
 }
 

@@ -18,7 +18,23 @@
                 <li class="nav-li"><a href="#menu">Cardápio</a></li>
             </ul>
             <p class="btn nav-pedido"><a href="#pedido">Fazer Pedido</a></p>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button id="close_btn">
+                <i class="fa-solid fa-x"></i>
+            </button>
         </nav>
+
+        <dib id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-li"><a href="#home">Início</a></li>
+                <li class="nav-li"><a href="#about">Sobre</a></li>
+                <li class="nav-li"><a href="#menu">Cardápio</a></li>
+            </ul>
+            <p class="btn nav-pedido"><a href="#pedido">Fazer Pedido</a></p>
+        </dib>
+
     </header>
 
     <main>
@@ -30,8 +46,8 @@
                 <div class="home-botoes">
                     <p class="btn home-btn-menu"><a href=#menu>Ver cardápio</a></p>
                     <div class="home-social-medias">
-                        <a href="https://www.instagram.com/gloriosopudim/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://api.whatsapp.com/message/PWF65VFYPAGRP1?autoload=1&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/gloriosopudim/" target="_blank"><i class="fa-brands fa-instagram home-icons"></i></a>
+                        <a href="https://api.whatsapp.com/message/PWF65VFYPAGRP1?autoload=1&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp home-icons"></i></a>
                     </div>
                 </div>
             </div>
@@ -47,14 +63,22 @@
                     <p>Feito artesanalmente, batido a mão e no liquidificador, sem uso de maisena/amidos ou gelatina, uso de ingredientes de qualidade e ovos frescos.
                         <span>Além do cuidado e respeito em cada etapa do processo.</span>
                     </p>
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
+                    <div class="about-icons">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3>Pagamentos:</h3>
+                    <div class="about-pagamento">
+                        <i class="fa-solid fa-money-bill"></i>
+                        <i class="fa-brands fa-pix"></i>
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                    </div>
                 </div>
                 <div class="about-antecedencia">
-                    <h3>Por que pedir com antecedência?</h3>
+                    <h3>Por que pedir com antecedência de 24h?</h3>
                     <p class="about-antec-sub">O pudim é feito de forma artesanal, então é necessário respeito ao tempo de cada processo: </p>
                     <div class="about-tempo">
                         <p>Preparo dos ingredientes e montagem <span>+/15min</span></p>
@@ -73,7 +97,7 @@
                 <div class="menu-cards">
                     <h3>Tradicional</h3>
                     <img src="images/img-pudim-trad-2.jpeg" alt="Imagem pudim tradicional" class="menu-card-img">
-                    <p>O clássico pudim de leite condensado, lisinho e cremoso.</p>
+                    <p>O clássico e maravilhoso pudim de leite condensado, lisinho e cremoso.</p>
                     <div class="menu-card-info">
                         <div class="cards-500g">
                             <p>500g</p>
@@ -136,7 +160,23 @@
                 <div class="menu-cards">
                     <h3>Zero Lactose</h3>
                     <img src="images/img-pudim-trad.jpeg" alt="Imagem pudim zero lactose" class="menu-card-img">
-                    <p>Todos os ingredientes zero lactose para quem ama pudim.</p>
+                    <p>Todos os ingredientes zero lactose para quem ama pudim poder se deliciar.</p>
+                    <div class="menu-card-info">
+                        <div class="cards-500g">
+                            <p>500g</p>
+                            <p class="btn cards-preco">R$30,00</p>
+                        </div>
+                        <div class="cards-1kg">
+                            <p>1kg</p>
+                            <p class="btn cards-preco">R$60,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-cards">
+                    <h3>Brigadeirão</h3>
+                    <img src="images/img-pudim-brigadeiro.jpeg" alt="Imagem pudim brigadeirão" class="menu-card-img">
+                    <p>Pudim feito com cacau 100% e granulé de chocolate ao leite por cima.</p>
                     <div class="menu-card-info">
                         <div class="cards-500g">
                             <p>500g</p>
@@ -152,20 +192,26 @@
         </section>
 
         <section id="pedido">
-            <h2>Tá esperando o que pra pedir o seu?</h2>
+            <h2>Tá esperando o que para pedir o seu?</h2>
             <p class="btn pedido-btn"><a href="https://api.whatsapp.com/message/PWF65VFYPAGRP1?autoload=1&app_absent=0">Peça aqui</a></p>
         </section>
     </main>
 
+    <footer>
+        <div class="footer-text">
+            <p>@gloriosopudim</p>
+            <p>Web Development by Carla Lopes</p>
+            <p><strong>&copy;2024</strong></p>
+        </div>
+        <img src="images/wave.svg" alt="Ondinha de fundo no rodapé" class="footer-img">
+    </footer>
 </body>
+    <script src="script.js"></script>
 </html>
 
 <!--
-- Footer
 - Fazer responsivo
-- Adicionar informações no sobre - insta-cardápio-destaques
 - Melhorar Design
 - Fazer parte do JS
-- Melhorar cardápio
 - https://github.com/Larissakich/landing-page-food-theme
 -->
