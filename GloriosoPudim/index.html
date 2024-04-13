@@ -8,157 +8,164 @@
     <title>Glorioso Pudim</title>
 </head>
 <body>
+    
     <header>
-        <nav>
-            <img class="img-logo" src="images/logo-pudim.png"/>
-            <div class="itens">
-                <ul>
-                    <a href="#home"><li>Home</li></a>
-                    <a href="#Sobre"><li>Sobre</li></a>
-                    <a href="#cardapio"><li>Cardápio</li></a>
-                    <a href="#pedido"><li>Pedido</li></a>
-                </ul>
-            </div>
+        <nav class="nav-bar">
+            <img class="nav-img" src="images/logo-pudim.png" alt="Logo do Glorioso Pudim" class="logo">
+            <ul class="nav-ul">
+                <li class="nav-li"><a href="#home">Início</a></li>
+                <li class="nav-li"><a href="#about">Sobre</a></li>
+                <li class="nav-li"><a href="#menu">Cardápio</a></li>
+            </ul>
+            <p class="btn nav-pedido"><a href="#pedido">Fazer Pedido</a></p>
         </nav>
     </header>
 
     <main>
-        
+
         <section id="home">
-            <h1>O pudim perfeito não exist...</h1>
+            <div class="home-cta">
+                <h1 class="home-text">O pudim perfeito não <span>exist...</span></h1>
+                <p>Experimente do bom e do melhor porque você merece!</p>
+                <div class="home-botoes">
+                    <p class="btn home-btn-menu"><a href=#menu>Ver cardápio</a></p>
+                    <div class="home-social-medias">
+                        <a href="https://www.instagram.com/gloriosopudim/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/message/PWF65VFYPAGRP1?autoload=1&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <img src="images/img-pudim-trad-3-home-semfundo.png" alt="Imagem pudim tradicional" class="home-img">
         </section>
 
-        <section id="sobre">
-            <p>Sobre</p>
+        <section id="about">
+            <h2>Sobre</h2>
+            <hr>
+            <div class="about-container">
+                <div class="about-diferencial">
+                    <h3>Qual o nosso diferencial?</h3>
+                    <p>Feito artesanalmente, batido a mão e no liquidificador, sem uso de maisena/amidos ou gelatina, uso de ingredientes de qualidade e ovos frescos.
+                        <span>Além do cuidado e respeito em cada etapa do processo.</span>
+                    </p>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="about-antecedencia">
+                    <h3>Por que pedir com antecedência?</h3>
+                    <p class="about-antec-sub">O pudim é feito de forma artesanal, então é necessário respeito ao tempo de cada processo: </p>
+                    <div class="about-tempo">
+                        <p>Preparo dos ingredientes e montagem <span>+/15min</span></p>
+                        <p>Após a montagem, ele vai ao forno em banho maria <span>+/1h30 a 2h</span></p>
+                        <p>Depois do tempo do forno, ele resfria completamente antes de ir a geladeira</p>
+                        <p>Na geladeira ele fica por aproximadamente <span>6h</span></p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="cardapio">
-            <h2 id="cardapio-txt">Cardápio</h2>
-            <div class="pudim-tradicional">
-        
-                <div class="card-grid">
-                    <div class="card-style">
-                        <img src="./images/img-pudim-trad-2.jpeg" class="image-style" />
-                        <div class="card-text">
-                            <div class="card-content">
-                                <h2>Tradicional</h2>
-                                <p>O clássico pudim de leite condensado, lisinho e cremoso.</p>
-                            </div>
-                            <div class="info-preco">
-                                <div class="500">
-                                    <p class="peso-p">500g</p>
-                                    <p class="preco-p">R$25,00</p>
-                                    <p class="serve-p">Serve de 4 a 6 pessoas</p>
-                                </div>
-                                <div class="1kg">
-                                    <p class="peso-p">1kg</p>
-                                    <p class="preco-p">R$50,00</p>
-                                    <p class="serve-p">Serve de 8 a 10 pessoas</p>
-                                </div>
-                            </div>
+        <section id="menu">
+            <h2>Cardápio</h2>
+            <hr>
+            <div class="menu-container">
+                <div class="menu-cards">
+                    <h3>Tradicional</h3>
+                    <img src="images/img-pudim-trad-2.jpeg" alt="Imagem pudim tradicional" class="menu-card-img">
+                    <p>O clássico pudim de leite condensado, lisinho e cremoso.</p>
+                    <div class="menu-card-info">
+                        <div class="cards-500g">
+                            <p>500g</p>
+                            <p class="btn cards-preco">R$25,00</p>
+                        </div>
+                        <div class="cards-1kg">
+                            <p>1kg</p>
+                            <p class="btn cards-preco">R$50,00</p>
                         </div>
                     </div>
-                    <div class="card-style">
-                        <img src="./images/img-pudim-coco.jpeg" class="image-style" />
-                        <div class="card-text">
-                            <div class="card-content">
-                                <h2>Cacada Cremosa</h2>
-                                <p>Feito com coco fresco ralado, acompanhado de calda caramelizada de coco.</p>
-                            </div>
-                            <div class="info-preco">
-                                <div class="500">
-                                    <p class="peso-p">500g</p>
-                                    <p class="preco-p">R$25,00</p>
-                                    <p class="serve-p">Serve de 4 a 6 pessoas</p>
-                                </div>
-                                <div class="1kg">
-                                    <p class="peso-p">1kg</p>
-                                    <p class="preco-p">R$50,00</p>
-                                    <p class="serve-p">Serve de 8 a 10 pessoas</p>
-                                </div>
-                            </div>
+                </div>
+                <div class="menu-cards">
+                    <h3>Ninho com Nutella</h3>
+                    <img src="images/img-pudim-ninho.jpeg" alt="Imagem pudim ninho com nutella" class="menu-card-img">
+                    <p>Feito com leite ninho e acompanhado por uma calda de nutella.</p>
+                    <div class="menu-card-info">
+                        <div class="cards-500g">
+                            <p>500g</p>
+                            <p class="btn cards-preco">R$25,00</p>
+                        </div>
+                        <div class="cards-1kg">
+                            <p>1kg</p>
+                            <p class="btn cards-preco">R$50,00</p>
                         </div>
                     </div>
-                    <div class="card-style">
-                        <img src="./images/img-pudim-ninho.jpeg" class="image-style" />
-                        <div class="card-text">
-                            <div class="card-content">
-                                <h2>Ninho com Nutella</h2>
-                                <p>Feito com leite ninho e acompanhado por uma calda de nutella. *Pode ser trocada pela calda de morango</p>
-                            </div>
-                            <div class="info-preco">
-                                <div class="500">
-                                    <p class="peso-p">500g</p>
-                                    <p class="preco-p">R$25,00</p>
-                                    <p class="serve-p">Serve de 4 a 6 pessoas</p>
-                                </div>
-                                <div class="1kg">
-                                    <p class="peso-p">1kg</p>
-                                    <p class="preco-p">R$50,00</p>
-                                    <p class="serve-p">Serve de 8 a 10 pessoas</p>
-                                </div>
-                            </div>
+                </div>
+
+                <div class="menu-cards">
+                    <h3>Cocada</h3>
+                    <img src="images/img-pudim-coco.jpeg" alt="Imagem pudim cocada" class="menu-card-img">
+                    <p>Feito com coco fresco ralado, acompanhado de calda caramelizada de coco.</p>
+                    <div class="menu-card-info">
+                        <div class="cards-500g">
+                            <p>500g</p>
+                            <p class="btn cards-preco">R$30,00</p>
+                        </div>
+                        <div class="cards-1kg">
+                            <p>1kg</p>
+                            <p class="btn cards-preco">R$60,00</p>
                         </div>
                     </div>
-                    <div class="card-style">
-                        <img src="./images/img-pudim-morango.jpeg" class="image-style" />
-                        <div class="card-text">
-                            <div class="card-content">
-                                <h2>Morango</h2>
-                                <p>Feito com chocolate branco nobre acompanhado de calda caseira de morango.</p>
-                            </div>
-                            <div class="info-preco">
-                                <div class="500">
-                                    <p class="peso-p">500g</p>
-                                    <p class="preco-p">R$25,00</p>
-                                    <p class="serve-p">Serve de 4 a 6 pessoas</p>
-                                </div>
-                                <div class="1kg">
-                                    <p class="peso-p">1kg</p>
-                                    <p class="preco-p">R$50,00</p>
-                                    <p class="serve-p">Serve de 8 a 10 pessoas</p>
-                                </div>
-                            </div>
+                </div>
+
+                <div class="menu-cards">
+                    <h3>Morango</h3>
+                    <img src="images/img-pudim-morango.jpeg" alt="Imagem pudim morango" class="menu-card-img">
+                    <p>Feito com chocolate branco nobre, acompanhado de uma calda caseira de morango.</p>
+                    <div class="menu-card-info">
+                        <div class="cards-500g">
+                            <p>500g</p>
+                            <p class="btn cards-preco">R$30,00</p>
+                        </div>
+                        <div class="cards-1kg">
+                            <p>1kg</p>
+                            <p class="btn cards-preco">R$60,00</p>
                         </div>
                     </div>
-                    <div class="card-style">
-                        <img src="./images/img-pudim-brigadeiro.jpeg" class="image-style" />
-                        <div class="card-text">
-                            <div class="card-content">
-                                <h2>Brigadeirão</h2>
-                                <p>O clássico pudim de leite condensado, lisinho e cremoso.</p>
-                            </div>
-                            <div class="info-preco">
-                                <div class="500">
-                                    <p class="peso-p">500g</p>
-                                    <p class="preco-p">R$25,00</p>
-                                    <p class="serve-p">Serve de 4 a 6 pessoas</p>
-                                </div>
-                                <div class="1kg">
-                                    <p class="peso-p">1kg</p>
-                                    <p class="preco-p">R$50,00</p>
-                                    <p class="serve-p">Serve de 8 a 10 pessoas</p>
-                                </div>
-                            </div>
+                </div>
+
+                <div class="menu-cards">
+                    <h3>Zero Lactose</h3>
+                    <img src="images/img-pudim-trad.jpeg" alt="Imagem pudim zero lactose" class="menu-card-img">
+                    <p>Todos os ingredientes zero lactose para quem ama pudim.</p>
+                    <div class="menu-card-info">
+                        <div class="cards-500g">
+                            <p>500g</p>
+                            <p class="btn cards-preco">R$30,00</p>
+                        </div>
+                        <div class="cards-1kg">
+                            <p>1kg</p>
+                            <p class="btn cards-preco">R$60,00</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
 
         <section id="pedido">
             <h2>Tá esperando o que pra pedir o seu?</h2>
-            <i class="fa-solid fa-arrow-down"></i>
-            <button class="btn-pedido"><a href="https://api.whatsapp.com/message/PWF65VFYPAGRP1?autoload=1&app_absent=0" target="_blank">Faça o seu pedido</a></button>
+            <p class="btn pedido-btn"><a href="https://api.whatsapp.com/message/PWF65VFYPAGRP1?autoload=1&app_absent=0">Peça aqui</a></p>
         </section>
-
     </main>
-
-    <footer>
-        <p>@2024</p>
-    </footer>
-
 
 </body>
 </html>
+
+<!--
+- Footer
+- Fazer responsivo
+- Adicionar informações no sobre - insta-cardápio-destaques
+- Melhorar Design
+- Fazer parte do JS
+- Melhorar cardápio
+- https://github.com/Larissakich/landing-page-food-theme
+-->
