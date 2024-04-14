@@ -4,6 +4,8 @@ const mobileMenu = document.getElementById('mobile_menu');
 const mobileNavList = document.getElementById('mobile_nav_list');
 const closeBtn = document.getElementById('close_btn');
 
+const mobileNavLinks = document.querySelectorAll('#mobile_nav_list .nav-li');
+
 mobileBtn.addEventListener('click', function() {
     mobileMenu.style.display = 'flex';
     mobileBtn.style.display = 'none';
@@ -17,7 +19,14 @@ closeBtn.addEventListener('click', function() {
     closeBtn.style.display = 'none';
 });
 
-
+//Quando um link for clicado
+mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.style.display = 'none';
+        mobileBtn.style.display = 'block';
+        closeBtn.style.display = 'none';
+    });
+});
 //Teste
 $(document).ready(function() {
     const sections = $('section');
