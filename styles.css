@@ -381,7 +381,7 @@ footer {
     /*Home responsiva*/
     #home {
         padding-top: 90px;
-        height: 80vh;
+        height: 85vh;
         flex-direction: column;
         background-color: rgb(249, 232, 200);
     }
